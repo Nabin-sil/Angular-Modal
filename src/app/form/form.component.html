@@ -1,5 +1,4 @@
-
-  <!-- <div class="container">
+<!-- <div class="container">
     <div class="row">
       <div class="col-md">
         <div class="card mt-3">
@@ -38,56 +37,57 @@
    
   </div> -->
 
-  <div class="container">
-    <div class="row">
-  <mat-card class="m-5 col-md-12 my-card" style="border: dark;">
-  <h3 class="text-center"> Main page</h3>
-    <mat-form-field class="col-md-12">
-      <input matInput [(ngModel)]="fullname" placeholder="Full Name*">
-    </mat-form-field>
-<br>
-    
-  <mat-form-field class="col-md-12">
-    <input matInput [(ngModel)]="address1" id="address1" placeholder="Address1*">
-  </mat-form-field>
-<br>
+<div class="container">
+  <div class="row">
+    <mat-card class="m-5 col-md-12 my-card" style="border: dark">
+      <h3 class="text-center">Main page</h3>
+      <mat-form-field class="col-md-12">
+        <input matInput [(ngModel)]="fullname" placeholder="Full Name*" />
+      </mat-form-field>
+      <br />
 
-<mat-form-field class="col-md-12">
-<input matInput [(ngModel)]="address2" id="address1" placeholder="Address1*">
-</mat-form-field>
-<br>
+      <mat-form-field class="col-md-12">
+        <input
+          matInput
+          [(ngModel)]="address1"
+          id="address1"
+          placeholder="Address1*"
+        />
+      </mat-form-field>
+      <br />
 
+      <mat-form-field class="col-md-12">
+        <input
+          matInput
+          [(ngModel)]="address2"
+          id="address1"
+          placeholder="Address1*"
+        />
+      </mat-form-field>
+      <br />
 
-<mat-form-field class="col-md-12">
-  <input matInput [(ngModel)]="city" placeholder="City*">
-</mat-form-field>
-<br>
+      <mat-form-field class="col-md-12">
+        <input matInput [(ngModel)]="city" placeholder="City*" />
+      </mat-form-field>
+      <br />
 
-<mat-form-field class="col-md-12">
-<input matInput [(ngModel)]="state" placeholder="State*">
-</mat-form-field>
+      <mat-form-field class="col-md-12">
+        <input matInput [(ngModel)]="state" placeholder="State*" />
+      </mat-form-field>
 
-
-<div class="row">
-  <div class="col text-center m-2 mr-4">
-    <button
-      type="submit"
-      (click)="openDialog()"
-      mat-raised-button
-      color="primary"
-      class="big-button"
-    >
-      Submit
-    </button>
+      <div class="row">
+        <div class="col text-center m-2 mr-4">
+          <button
+            type="submit"
+            (click)="openDialog()"
+            mat-raised-button
+            color="primary"
+            class="big-button"
+          >
+            Submit
+          </button>
+        </div>
+      </div>
+    </mat-card>
   </div>
 </div>
-
-
-</mat-card>
-
-</div>
-</div>
-
-
-
-  

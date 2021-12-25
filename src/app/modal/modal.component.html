@@ -1,44 +1,66 @@
 <div class="container">
-<div class="row">
-<h5 class="mt-3">Address Details</h5>
-<button
-type="button"
-class="btn btn-sm ml-auto"
- [mat-dialog-close]="data.state" 
->
-<i class="fas fa-times ml-auto"></i>
+  <div class="row">
+    <h5 class="mt-3">Address Details</h5>
+    <button
+      type="button"
+      class="btn btn-sm ml-auto"
+      [mat-dialog-close]="data.state"
+    >
+      <i class="fas fa-times ml-auto"></i>
+    </button>
+  </div>
 
-</button>
-</div>
+  <hr />
+  <div class="row mt-4">
+    <label class="col-md-6 col-sm-6">Full Name:</label>
+    <input
+      class="col-md-3 ml-3"
+      matInput
+      [(ngModel)]="data.fullname"
+      placeholder="Full Name*"
+    />
+  </div>
 
+  <div class="row mt-4">
+    <label class="col-md-6">Address 1:</label>
+    <input
+      class="col-md-3 ml-3"
+      matInput
+      [(ngModel)]="data.address1"
+      placeholder="Address1*"
+    />
+  </div>
 
-<hr>
-<div class="row mt-4">
-  <label class="col-md-6 col-sm-6">Full Name:</label> 
-  <input class="col-md-3 ml-3" matInput [(ngModel)]="data.fullname" placeholder="Full Name*">
-</div>
+  <div class="row mt-4">
+    <label class="col-md-6">Address 2:</label>
+    <input
+      class="col-md-3 ml-3"
+      matInput
+      [(ngModel)]="data.address2"
+      id="address2"
+      placeholder="Address2*"
+    />
+  </div>
 
-<div class="row mt-4">
-  <label class="col-md-6">Address 1:</label> 
-  <input class="col-md-3 ml-3" matInput [(ngModel)]="data.address1" placeholder="Address1*">
-</div>
+  <div class="row mt-4">
+    <label class="col-md-6">City:</label>
+    <input
+      class="col-md-3 ml-3"
+      matInput
+      [(ngModel)]="data.city"
+      placeholder="City*"
+    />
+  </div>
 
-<div class="row mt-4">
-  <label class="col-md-6">Address 2:</label> 
-<input class="col-md-3 ml-3" matInput [(ngModel)]="data.address2" id="address2" placeholder="Address2*">
-</div>
-
-<div class="row mt-4">
-  <label class="col-md-6">City:</label> 
-  <input class="col-md-3 ml-3" matInput [(ngModel)]="data.city" placeholder="City*">
-</div>
-
-<div class="row mt-4">
-  <label class="col-md-6">State:</label> 
-  <input class="col-md-3 ml-3" matInput [(ngModel)]="data.state" placeholder="State*">
-</div>
-
-
+  <div class="row mt-4">
+    <label class="col-md-6">State:</label>
+    <input
+      class="col-md-3 ml-3"
+      matInput
+      [(ngModel)]="data.state"
+      placeholder="State*"
+    />
+  </div>
 
   <div class="row mt-4">
     <div class="col text-center m-2 mr-4">
@@ -47,15 +69,12 @@ class="btn btn-sm ml-auto"
         mat-raised-button
         color="primary"
         class="big-button"
-        mat-button [mat-dialog-close]="data.state" cdkFocusInitial
+        mat-button
+        [mat-dialog-close]="data.state"
+        cdkFocusInitial
       >
         Ok
       </button>
     </div>
   </div>
-
-
-
-
-  
 </div>
