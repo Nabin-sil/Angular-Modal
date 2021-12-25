@@ -29,7 +29,7 @@ export class FormComponent implements OnInit {
 
   openDialog(): void {
     let dialogRef = this.dialog.open(ModalComponent, {
-      width: '450px',
+      width: '400px',
       data: { 
         fullname:this.fullname,
         address1:this.address1,
