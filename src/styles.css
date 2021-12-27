@@ -62,7 +62,6 @@ header {
     height: 100vh;
     background: linear-gradient(to bottom, #ce0000, #7A0800 70%);
     position: absolute;
-    -webkit-clip-path: ellipse(500px 500px at 10% 5%)
 }
 
 .right-side {
