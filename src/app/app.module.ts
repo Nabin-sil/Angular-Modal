@@ -14,6 +14,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ModalComponent } from './modal/modal.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BodyComponent } from './components/body/body.component';
 
 
 
@@ -21,7 +24,10 @@ import { ModalComponent } from './modal/modal.component';
   declarations: [
     AppComponent,
     FormComponent,
-    ModalComponent
+    ModalComponent,
+    HeaderComponent,
+    FooterComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
