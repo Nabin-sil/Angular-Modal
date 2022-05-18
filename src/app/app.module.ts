@@ -17,6 +17,7 @@ import { ModalComponent } from './modal/modal.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BodyComponent } from './components/body/body.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -27,7 +28,8 @@ import { BodyComponent } from './components/body/body.component';
     ModalComponent,
     HeaderComponent,
     FooterComponent,
-    BodyComponent
+    BodyComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
